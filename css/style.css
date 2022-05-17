@@ -1,0 +1,67 @@
+
+.navBar {
+    position: absolute;
+    display: flex;
+width: 1440px;
+height: 75px;
+top: 0px;
+left: 0px;
+right: 0px;
+padding-left: 7.64%;
+padding-right: 7.64%;
+background-color: #E57F5F;
+}
+
+#grLogo {
+left: 7.64%;
+width: 212px;
+height: 55px;
+padding-top: 10px;
+}
+
+.navButtons {
+    position: absolute;
+    display: flex;
+    left: 26.32%;
+    top: 0px
+    
+}
+.navButtons p {
+    margin: 28.25px;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+letter-spacing: 0.015em;
+
+color: #221515;
+}
+.searchBarNav {
+    position: absolute;
+    left: 56.53%;
+    right: 20.69%;
+    top: 22.67%;
+    bottom: 24%;
+    
+    background: #FFFFFF;
+    border-radius: 120px;
+}
+.searchBarNav img {
+width: 38px;
+position: absolute;
+padding: 2px;
+right: 5px;
+}
+.navIcons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+.navIcons img {
+    width: 38px;
+    margin-left: 18px;
+}
