@@ -1,8 +1,64 @@
+/* Text Styles */
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    letter-spacing: 0.015em;
+    color: #222020;
+}
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 75px;
+    letter-spacing: 0.015em;
+    color: #222020;
+    margin: 0;
+}
+h3 {
+margin-top: 5px;
+margin-bottom: 20px;
+font-family: 'Libre Baskerville';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 31px;
 
+color: #222020;
+}
+h4 {
+    font-family: 'Libre Baskerville';
+font-style: italic;
+font-weight: 400;
+font-size: 20px;
+line-height: 25px;
+margin: 0px;
+color: #222020;
+}
+p{
+    font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+letter-spacing: 0.015em;
+
+color: #000000;
+}
+
+/* Navigation */
+nav {
+    width: 100%;
+    left: 0px;
+    right: 0px;
+}
 .navBar {
     position: absolute;
     display: flex;
-width: 1440px;
+width: auto;
 height: 75px;
 top: 0px;
 left: 0px;
@@ -27,9 +83,9 @@ padding-top: 10px;
     
 }
 .navButtons p {
-    margin: 28.25px;
+    margin-top: 28.25px;
+    margin-bottom: 28.25px;
     font-family: 'Raleway', sans-serif;
-    font-family: 'Raleway';
 font-style: normal;
 font-weight: 700;
 font-size: 18px;
@@ -39,7 +95,12 @@ letter-spacing: 0.015em;
 
 color: #221515;
 }
+#browse {
+    margin-left: calc(2vw);
+    margin-right: calc(2vw);
+}
 .searchBarNav {
+    display: none; /*can delete this to bring in the search bar on other pages */
     position: absolute;
     left: 56.53%;
     right: 20.69%;
@@ -64,4 +125,116 @@ right: 5px;
 .navIcons img {
     width: 38px;
     margin-left: 18px;
+}
+
+
+/* Hero Section */
+
+.hero {
+    position: absolute;
+    padding: 0px;
+    height: 300px;
+    width: auto;
+    background: url(../images/hero.png);
+    margin-top: 75px;
+    background-size: cover;
+    background-position: center;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+}
+.valueProp {
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+}
+.searchBarHome {
+    position: absolute;
+height: 60px;
+left: 20%;
+right: 20%;
+top: 148px;
+background: #FFFFFF;
+border-radius: 120px;
+filter: drop-shadow(0px 4px 37px rgba(0, 0, 0, 0.2));
+
+}
+.searchBarHome img {
+    position: absolute;
+height: 45px;
+right: 12px;
+top: 8px;
+}
+
+/*CURRENT READ*/
+
+.currentRead {
+    position: absolute;
+    display: flex;
+width: 100%;
+height: 500px;
+left: 0px;
+right: 0px;
+top: 372px;
+background: #FFFFFE;
+box-shadow: 0px 7px 19px 16px rgba(0, 0, 0, 0.1);
+z-index: 1;
+}
+.currentRead img {
+    position: absolute;
+height: 400px;
+left: 7.64%;
+right: 74.11%;
+top: 50px;
+}
+.currentReadCopy {
+    position: absolute;
+height: 400px;
+left: 420px;
+right: 7.64%;
+top: 50px;
+}
+#buttonCurrent{
+width: 302px;
+height: 60px;
+background: #2F2E2E;
+border-radius: 39px;
+text-decoration: none;
+border: none;
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+letter-spacing: 0.015em;
+color: #F9F8F5;
+}
+
+/*Friend Suggestions*/
+.friendsRead{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 872px;
+background: #5A7B63;
+height: 700px;
+}
+
+.friendsRead h2 {
+    color: white;
+    margin-top: 50px;
+    margin-left: 7.64%;
+}
+
+.frBooks {
+    display: flex;
+    justify-content: space-around;
+    margin-block-start: 30px;
+    
+}
+.frBookImage {
+    height: 378px;
+    filter: drop-shadow(13px 4px 12px rgba(0, 0, 0, 0.25));
+
 }
