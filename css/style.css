@@ -20,7 +20,7 @@ h2 {
 }
 h3 {
 margin-top: 5px;
-margin-bottom: 20px;
+margin-bottom: 0px;
 font-family: 'Libre Baskerville';
 font-style: normal;
 font-weight: 700;
@@ -38,6 +38,17 @@ line-height: 25px;
 margin: 0px;
 color: #222020;
 }
+h5 {
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 35px;
+letter-spacing: 0.015em;
+margin: 0px;
+margin-top: 20px;
+color: #222020;
+}
 p{
     font-family: 'Manrope';
 font-style: normal;
@@ -49,6 +60,16 @@ letter-spacing: 0.015em;
 color: #000000;
 }
 
+a {
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 23px;
+letter-spacing: 0.015em;
+text-decoration-line: underline;
+color: #2F2E2E;
+}
 /* Navigation */
 nav {
     width: 100%;
@@ -126,7 +147,10 @@ right: 5px;
     width: 38px;
     margin-left: 18px;
 }
-
+#profileImg {
+    filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.25));
+    width: 50px;
+}
 
 /* Hero Section */
 
@@ -186,17 +210,21 @@ height: 400px;
 left: 7.64%;
 right: 74.11%;
 top: 50px;
+display: block;
 }
 .currentReadCopy {
     position: absolute;
 height: 400px;
-left: 420px;
+left: calc(7.64% + 300px);
 right: 7.64%;
 top: 50px;
 }
-#buttonCurrent{
-width: 302px;
+.buttonCurrent{
+    position: absolute;
+width: 146px;
 height: 60px;
+right: 0px;
+top: 335px;
 background: #2F2E2E;
 border-radius: 39px;
 text-decoration: none;
@@ -211,12 +239,86 @@ letter-spacing: 0.015em;
 color: #F9F8F5;
 }
 
+#textEntryCR {
+    position: absolute;
+height: 162px;
+left: 0px;
+right: calc(7.64% + 105px);
+
+top: 238px;
+background: rgba(196, 196, 196, 0.28);
+border-radius: 20px;
+}
+#textEntryCR p {
+    padding-left: 16px;
+}
+#rate {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+#rate h5 {
+    text-align: right;
+}
+#rateStars {
+    position: absolute;
+width: 169px;
+height: 33px;
+right: 0px;
+left: auto;
+top: 54px;
+}
+/*About Author Section */
+.aboutAuthor {
+    position: absolute;
+width: 100%;
+height: 705px;
+left: 0px;
+right: 0px;
+top: 872px;
+background: #E4C36D;
+}
+#authorImg {
+    position: absolute;
+height: 821.17px;
+top: 0px;
+z-index: 1;
+}
+#yokoInfo {
+    position: absolute;
+    top: 50px;
+    left: 43.54%;
+    right: 7.57%;
+}
+#yokoInfo p {
+    margin: 0px;
+}
+#otherBooksYoko {
+    position: absolute;
+    left: 43.54%;
+    right: 7.57%;
+    top: 311px;
+}
+.yokoCover {
+    height: 232px;
+    filter: drop-shadow(9px 4px 8px rgba(0, 0, 0, 0.25));
+}
+#booksOnYokoShelf {
+    display: flex;
+    justify-content: space-around;
+}
+#shelfYoko {
+    width: 100%;
+height: 20px;
+background: url(../images/walnut.jpeg);
+}
 /*Friend Suggestions*/
 .friendsRead{
+    z-index: 100;
     position: absolute;
     left: 0px;
     right: 0px;
-    top: 872px;
+    top: 1577px;
 background: #5A7B63;
 height: 700px;
 }
@@ -231,10 +333,61 @@ height: 700px;
     display: flex;
     justify-content: space-around;
     margin-block-start: 30px;
-    
+    margin-left: 7.57%;
+    margin-right: 7.57%;
 }
 .frBookImage {
     height: 378px;
     filter: drop-shadow(13px 4px 12px rgba(0, 0, 0, 0.25));
+
+}
+#shelfFriends {
+    width: auto;
+    height: 25px;
+    background: url(../images/oakkk.jpeg);
+    background-size:cover;
+    background-position: center;
+    margin-left: 7.57%;
+    margin-right: 7.57%;
+}
+
+.friendFaceOverlay {
+    position:absolute;
+    width: 84.86%;
+    padding-left: 7.57%;
+    padding-right: 7.57%;
+    display: flex;
+    justify-content: space-around;
+    top: 475px;
+}
+.ffoImg {
+    height: 114px;
+    filter: drop-shadow(2px 4px 14px rgba(0, 0, 0, 0.4));
+    z-index: 10;
+}
+#viewMore {
+    width: 186px;
+    justify-content: center;
+    align-items: center;
+    right: auto;
+    left: auto;
+    position: absolute;
+    height: 60px;
+    top: 595px;
+    background: #2F2E2E;
+    border-radius: 39px;
+    text-decoration: none;
+    border: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.015em;
+    color: #F9F8F5;
+    margin-left: calc(50% - 93px);
+    margin-right: calc(50% - 93px);
+    margin-top: 6px;
 
 }

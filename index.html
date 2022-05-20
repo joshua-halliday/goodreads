@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="./css/style.css" type="text/css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,700;1,400&family=Manrope:wght@500&family=Raleway:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,700;1,400&family=Manrope:wght@500&family=Raleway:wght@600;700&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -24,7 +24,7 @@
             <div class="navIcons">
                 <img src="./images/group.svg" alt="group">
                 <img src="./images/notification_outline.svg" alt="notifications">
-                <img src="./images/user_circle.svg" alt="profile">
+                <img id="profileImg" src="./images/userFace1.png" alt="profile">
             </div>
         </nav>
 <!--HERO-->
@@ -43,28 +43,58 @@
             <h2>Currently Reading</h2>
             <h4 class="bookAuthor">Yōko Ogawa</h4>
             <h3 class="bookTitle">The Memory Police</h3>
-            
-            <p>
-
-On an unnamed island off an unnamed coast, objects are disappearing: first hats, then ribbons, birds, roses—until things become much more serious. Most of the island's inhabitants are oblivious to these changes, while those few imbued with the power to recall the lost objects live in fear of the draconian Memory Police, who are committed to ensuring that what has disappeared remains forgotten.
-<br><br>
-When a young woman who is struggling to maintain her career as a novelist discovers that her editor is in danger from the Memory Police, she concocts a plan to hide him beneath her floorboards. As fear and loss close in around them, they cling to her writing as the last way of preserving the past.
-
-
-            </p>
-            <button id="buttonCurrent">Go to My Bookshelf</button>
+            <a href="#">Change Book</a>
+            <h5>How are you finding the book so far?</h5>
+            <div id="textEntryCR">
+                <p>Type your thoughts in here...</p>
+            </div>
+            <div id="rate">
+                <h5>Rate the book</h5>
+                <img id="rateStars" src="./images/stars.png" alt="stars">
+            </div>
+            <button class="buttonCurrent">Save</button>
         </div>
         
         </section>
+<!--About AUTHOR-->
+        <section class="aboutAuthor">
+            <div class="authorContent">
+                <img id="authorImg" src="./images/author.png" alt="authorImg">
+                <div id="yokoInfo">
+                    <h2>About Yoko Ogawa</h2>
+                    <p>Yōko Ogawa (小川 洋子, Ogawa Yōko, born March 30, 1962) is a Japanese writer. Her work has won every major Japanese literary award, including the Akutagawa Prize and the Yomiuri Prize. Yoko Ogawa is the author of The Diving Pool, The Housekeeper and the Professor, and Hotel Iris. Her fiction has appeared in The New Yorker, A Public Space, and Zoetrope. Since 1988 she has published more than twenty works of fiction and nonfiction, and has won every major Japanese literary award. Her novel The Housekeeper and the Professor has been adapted into a film, The Professor’s Beloved Equation. She lives in Ashiya, Japan, with her husband and son.</p>
+                </div>
+                <div id="otherBooksYoko">
+                    <h2>Other books by Yoko Ogawa</h2>
+                    <div id="booksOnYokoShelf">
+                        <img class="yokoCover" src="./images/BookY1.png" alt="bookCover">
+                        <img class="yokoCover" src="./images/BookY2.png" alt="bookCover">
+                        <img class="yokoCover" src="./images/BookY3.png" alt="bookCover">
+                        <img class="yokoCover" src="./images/BookY4.png" alt="bookCover">
+                            
+                    </div>
+                    <div id="shelfYoko"></div>
+                </div>
+            </div>
+        </section>
+<!--FRIENDS READ-->
         <section class="friendsRead">
             <h2>What your friends are reading</h2>
             <div class="frBooks">
                 <img class="frBookImage" src="./images/BookCover2.png" alt="book2">
-                <img class="frBookImage" src="./images/BookCover3.jpeg" alt="book3">
+                <img class="frBookImage" src="./images/BookCover3.jpg" alt="book3">
                 <img class="frBookImage" src="./images/BookCover4.png" alt="book4">
                 <img class="frBookImage" src="./images/BookCover5.png" alt="book5">
 
             </div>
+            <div id="shelfFriends"></div>
+            <div class="friendFaceOverlay">
+                <img class="ffoImg" src="./images/userFace2.png" alt="User Profile Pic">
+                <img class="ffoImg" src="./images/userFace3.png" alt="User Profile Pic">
+                <img class="ffoImg" src="./images/userFace3.png" alt="User Profile Pic">
+                <img class="ffoImg" src="./images/userFace4.png" alt="User Profile Pic">
+            </div>
+            <button id="viewMore" class="buttonCurrent">View More</button>
         </section>
         <footer class="footerBar">
 
