@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="./css/style.css" type="text/css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,700;1,400&family=Manrope:wght@500&family=Raleway:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,700;1,400&family=Manrope:wght@500&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -12,7 +12,7 @@
 
         <nav class="navBar">
         
-            <img id="grLogo" src="./images/grLogoDark.png" alt="Goodreads logo">
+            <img class="grLogo" src="./images/grLogoDark.png" alt="Goodreads logo">
             <div class="navButtons">
                     <p>My Bookshelf</p>
                     <p id="browse">Browse</p>
@@ -96,8 +96,68 @@
             </div>
             <button id="viewMore" class="buttonCurrent">View More</button>
         </section>
-        <footer class="footerBar">
+<!--Reading Challenge-->
+        <section class="readingChallenge">
+            <h2>Reading Challenge leaderboard</h2>
+            <div id="rcLeft">
+            <div class="rcCard">
+                <h2>You've read</h2>
+                <h6>7</h6>
+                <h1>/50</h1>
+                <p>books this year</p>
+                <button class="challengeButton">Go to challenge</button>
+            </div>
+            
+            <div id="shareDiv">
+                <h5>Share</h5>
+                <img src="./images/share_outline.png" alt="share icon">
+            </div>
+        </div>
+        <div id="rcRight">
+            <div class="leaderboardColumn" id="lc1">
+                <img class="ffoImg" src="./images/userFace2.png" alt="profile pic">
+                <h2>3</h2>
+            </div>
+            <div class="leaderboardColumn" id="lc2">
+                <img class="ffoImg" src="./images/userFace5.png" alt="profile pic">
+                <h2>4</h2>
+            </div>
+            <div class="leaderboardColumn" id="lc3">
+                <img class="ffoImg" src="./images/userFace3.png" alt="profile pic">
+                <h2>7</h2>
+            </div>
+            <div class="leaderboardColumn" id="lc4">
+                <img class="ffoImg" src="./images/userFace6.png" alt="profile pic">
+                <h2>2</h2>
+            </div>
+            <div class="leaderboardColumn" id="lc5">
+                <img class="ffoImg" src="./images/userFace4.png" alt="profile pic">
+                <h2>6</h2>
+            </div>
+        </div>
+        </section>
 
+
+        <footer class="footerBar">
+            <div class="footerTopRow">
+            <img class="grLogo" id="footerLogo" src="./images/grLogoDark.png" alt="Goodreads logo">
+            <div class="navButtons" id="footerNav">
+                    <p>About us</p>
+                    <p>Contact us</p>
+                    <p>Careers</p>
+                    <p>Sitemap</p>
+            </div>
+         </div>
+         <div id="footerCopy">
+             <p>Goodreads is the world’s largest site for readers and book recommendations. Our mission is to help people find and share books they love. Goodreads launched in January 2007.</p>
+         </div>
+         <div id="footerIcons">
+             <img id="socialIconImg" src="./images/social.png" alt="social icons">
+             <div id="dowloadApp">
+             <img id="iosApp" src="./images/appstore 1.png" alt="app store">
+             <img src="./images/googleplay 1.png" alt="google play">
+            </div>
+         </div>
         </footer>
     </body>
 </html>
