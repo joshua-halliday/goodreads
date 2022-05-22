@@ -589,7 +589,7 @@ flex-direction: column;
     left: 43.54%;
     right: 7.64%;
     justify-content: space-between;
-    padding-right: 150px;
+    padding-right: 15%;
 }
 
 #footerCopy {
@@ -609,4 +609,8 @@ flex-direction: column;
 }
 #iosApp {
     padding-right: 14px;
+}
+#socialIconImg {
+    width: auto;
+    height: 54px;
 }
