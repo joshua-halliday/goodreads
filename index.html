@@ -3,7 +3,6 @@
     <head>
         <title>Goodreads</title>
         <link rel="icon" type="image/x-icon" href="./images/smallIcon.png">
-
         <link rel="stylesheet" href="./css/style.css" type="text/css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,9 +16,9 @@
         
             <img class="grLogo" src="./images/grLogoDark.png" alt="Goodreads logo">
             <div class="navButtons">
-                    <p>My Bookshelf</p>
-                    <p id="browse">Browse</p>
-                    <p>Community</p>
+                    <p class="nbh">My Bookshelf</p>
+                    <p class="nbh" id="browse">Browse</p>
+                    <p class="nbh">Community</p>
             </div>
             <div class="searchBarNav">
                 <img src="./images/search_small.svg" alt="search">
@@ -41,7 +40,7 @@
         </section>
 <!--CURRENTLY READING-->
         <section class="currentRead">
-            <img src="./images/BookCover1.png" alt="bookcover">
+            <img class="currentBookImg" src="./images/BookCover1.png" alt="bookcover">
             <div class="currentReadCopy">
             <h2>Currently Reading</h2>
             <h4 class="bookAuthor">Yōko Ogawa</h4>
@@ -62,7 +61,7 @@
 <!--About AUTHOR-->
         <section class="aboutAuthor">
             <div class="authorContent">
-                <img id="authorImg" src="./images/author.png" alt="authorImg">
+                <img class="authorImg" src="./images/author.png" alt="authorImg">
                 <div id="yokoInfo">
                     <h2>About Yoko Ogawa</h2>
                     <p>Yōko Ogawa (小川 洋子, Ogawa Yōko, born March 30, 1962) is a Japanese writer. Her work has won every major Japanese literary award, including the Akutagawa Prize and the Yomiuri Prize. Yoko Ogawa is the author of The Diving Pool, The Housekeeper and the Professor, and Hotel Iris. Her fiction has appeared in The New Yorker, A Public Space, and Zoetrope. Since 1988 she has published more than twenty works of fiction and nonfiction, and has won every major Japanese literary award. Her novel The Housekeeper and the Professor has been adapted into a film, The Professor’s Beloved Equation. She lives in Ashiya, Japan, with her husband and son.</p>
@@ -97,7 +96,7 @@
                 <img class="ffoImg" src="./images/userFace3.png" alt="User Profile Pic">
                 <img class="ffoImg" src="./images/userFace4.png" alt="User Profile Pic">
             </div>
-            <button id="viewMore" class="buttonCurrent">View More</button>
+            <button class="viewMore buttonCurrent">View More</button>
         </section>
 <!--Reading Challenge-->
         <section class="readingChallenge">
@@ -118,24 +117,24 @@
         </div>
         <div id="rcRight">
             <div class="leaderboardColumn" id="lc1">
-                <img class="ffoImg" src="./images/userFace2.png" alt="profile pic">
-                <h2>3</h2>
+                <img class="ffoImg lcpImg" class="lcpImg" src="./images/userFace2.png" alt="profile pic">
+                <h2 class="columnH2">3</h2>
             </div>
             <div class="leaderboardColumn" id="lc2">
-                <img class="ffoImg" src="./images/userFace5.png" alt="profile pic">
-                <h2>4</h2>
+                <img class="ffoImg lcpImg" src="./images/userFace5.png" alt="profile pic">
+                <h2 class="columnH2">4</h2>
             </div>
             <div class="leaderboardColumn" id="lc3">
-                <img class="ffoImg" src="./images/userFace3.png" alt="profile pic">
-                <h2>7</h2>
+                <img class="ffoImg lcpImg" src="./images/userFace3.png" alt="profile pic">
+                <h2 class="columnH2">7</h2>
             </div>
             <div class="leaderboardColumn" id="lc4">
-                <img class="ffoImg" src="./images/userFace6.png" alt="profile pic">
-                <h2>2</h2>
+                <img class="ffoImg lcpImg" src="./images/userFace6.png" alt="profile pic">
+                <h2 class="columnH2">2</h2>
             </div>
             <div class="leaderboardColumn" id="lc5">
-                <img class="ffoImg" src="./images/userFace4.png" alt="profile pic">
-                <h2>6</h2>
+                <img class="ffoImg lcpImg" src="./images/userFace4.png" alt="profile pic">
+                <h2 class="columnH2">6</h2>
             </div>
         </div>
         </section>
@@ -162,5 +161,8 @@
             </div>
          </div>
         </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="./js/index.js"></script>
+
     </body>
 </html>

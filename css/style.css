@@ -70,6 +70,9 @@ letter-spacing: 0.015em;
 text-decoration-line: underline;
 color: #2F2E2E;
 }
+
+
+
 /* Navigation */
 nav {
     width: 100%;
@@ -94,6 +97,11 @@ left: 7.64%;
 width: 212px;
 height: 55px;
 padding-top: 10px;
+transition: all 0.2s ease-in-out;
+}
+.grLogo:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 .navButtons {
@@ -113,8 +121,13 @@ font-size: 18px;
 line-height: 21px;
 text-align: center;
 letter-spacing: 0.015em;
-
+transition: all 0.2s ease-in-out;
 color: #221515;
+}
+.nbh:hover {
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
 }
 #browse {
     margin-left: calc(2vw);
@@ -181,7 +194,12 @@ top: 148px;
 background: #FFFFFF;
 border-radius: 120px;
 filter: drop-shadow(0px 4px 37px rgba(0, 0, 0, 0.2));
+transition: all 0.2s ease-in-out;
 
+}
+.searchBarHome:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }
 .searchBarHome img {
     position: absolute;
@@ -244,6 +262,7 @@ color: #F9F8F5;
 height: 162px;
 left: 0px;
 right: calc(7.64% + 105px);
+transition: all 0.2s ease-in-out;
 
 top: 238px;
 background: rgba(196, 196, 196, 0.28);
@@ -251,6 +270,11 @@ border-radius: 20px;
 }
 #textEntryCR p {
     padding-left: 16px;
+}
+#textEntryCR:hover {
+    cursor: pointer;
+    background: rgba(196, 196, 196, 0.8);
+
 }
 #rate {
     position: absolute;
@@ -268,6 +292,9 @@ right: 0px;
 left: auto;
 top: 54px;
 }
+#rateStars:hover {
+    cursor: pointer;
+}
 /*About Author Section */
 .aboutAuthor {
     position: absolute;
@@ -278,11 +305,12 @@ right: 0px;
 top: 872px;
 background: #E4C36D;
 }
-#authorImg {
+.authorImg {
     position: absolute;
 height: 821.17px;
-top: 0px;
+top: 560px;
 z-index: 1;
+transition: all 0.3s ease-out;
 }
 #yokoInfo {
     position: absolute;
@@ -302,6 +330,12 @@ z-index: 1;
 .yokoCover {
     height: 232px;
     filter: drop-shadow(9px 4px 8px rgba(0, 0, 0, 0.25));
+    transition: all 0.3s ease-out;
+
+}
+.yokoCover:hover {
+    cursor: pointer;
+    transform:translateY(-10px);
 }
 #booksOnYokoShelf {
     display: flex;
@@ -339,7 +373,12 @@ height: 700px;
 .frBookImage {
     height: 378px;
     filter: drop-shadow(13px 4px 12px rgba(0, 0, 0, 0.25));
+    transition: all 0.3s ease-out;
 
+}
+.frBookImage:hover {
+    cursor: pointer;
+    transform:translateY(-15px);
 }
 #shelfFriends {
     width: auto;
@@ -365,7 +404,7 @@ height: 700px;
     filter: drop-shadow(2px 4px 14px rgba(0, 0, 0, 0.4));
     z-index: 10;
 }
-#viewMore {
+.viewMore {
     width: 186px;
     justify-content: center;
     align-items: center;
@@ -418,7 +457,9 @@ height: 700px;
     background: #F9F8F5;
     box-shadow: 6px 4px 19px rgba(0, 0, 0, 0.25);
     margin-top: 20px;
+
 }
+
 #rcLeft {
     text-align: center;
 }
@@ -522,27 +563,41 @@ align-items: flex-end;
     justify-content: space-between;
     padding-top: 15px;
     padding-bottom: 15px;
+
 }
 .leaderboardColumn img {
     width: 114px;
+    
+}
+.lcpImg {
+    transition: all 0.3s ease-out 0.3s;
+    opacity: 0;
 }
 .leaderboardColumn h2 {
     bottom: 18px;
     color: white;
 }
-
+.columnH2 {
+    opacity: 0;
+    transition: all 0.3s ease-out 0.3s;
+}
 #lc1 {
-    height: 299px;
+    height: 77px;
+    transition: all 0.3s ease-out;
     background: #3981CC;
     border-radius: 10px 0px 0px 0px;
 }
 #lc2 {
-    height: 339px;
+    height: 77px;
+    transition: all 0.3s ease-out;
+
     background: #80B87B;
     border-radius: 10px 0px 0px 0px;
 }
 #lc3 {
-    height: 472px;
+    height: 77px;
+    transition: all 0.3s ease-out;
+
     background: #DF6E9A;
     border-radius: 10px 10px 0px 0px;
 }
@@ -552,10 +607,14 @@ align-items: flex-end;
 }
 #lc4 {
     background: #B85F53;
-    height: 231px;
+    height: 77px;
+    transition: all 0.3s ease-out;
+
 }
 #lc5 {
-    height: 424px;
+    height: 77px;
+    transition: all 0.3s ease-out;
+
     background: #527667;
     border-radius: 10px 10px 0px 0px;
 }
@@ -613,4 +672,23 @@ flex-direction: column;
 #socialIconImg {
     width: auto;
     height: 54px;
+}
+/*EXTRA HOVER STATES*/
+
+button {
+    transition: all 0.2s ease-in-out;
+
+}
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background: #000000;
+}
+.currentBookImg {
+    transition: all 0.2s ease-in-out;
+
+}
+.currentBookImg:hover{
+    cursor: pointer;
+    transform: scale(1.02);
 }
